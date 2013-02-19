@@ -1,0 +1,10 @@
+#!/bin/bash
+URL=$1
+SAVE=`pwd`
+TMPGIT=`mktemp  -d -t xbmcfinrepo`
+REPONAME=`basename $URL .git`
+
+cd $TMPGIT
+git clone $URL
+cd $TMPGIT/$REPONAME/releases/latest/
+unzip *.zip -d $SAVE/

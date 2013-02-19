@@ -1,26 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addons>
-<addon id="plugin.video.moontv.fi" name="MoonTV.fi" version="0.1" provider-name="Jani (rasjani) Mikkonen">
-  <requires>
-    <import addon="xbmc.python" version="2.0"/>
-    <import addon="script.module.xbmcswift2" version="1.2.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <language>fi</language>
-    <summary>Finnish Net-TV Channel MoonTV</summary>
-    <description>Finnish Net-TV Channel MoonTV</description>
-    <summary lang="fi">Suomalainen netti tv kanava MoonTV</summary>
-    <description lang="fi">Suomalainen netti tv kanava MoonTV</description>
-    <summary lang="en">Finnish Net-TV Channel MoonTV</summary>
-    <description lang="en">Finnish Net-TV Channel MoonTV</description>
-  </extension>
-</addon>
-
 <addon id="repository.finrepo.xbmc" name="FinRepo Add-ons" version="1.0.0" provider-name="rasjani">
         <extension point="xbmc.addon.repository" name="FinRepo Add-ons">
                 <info compressed="false">http://pcuf.fi/~rasjani/xbmc-finrepo/addons.xml</info>
@@ -36,4 +14,4 @@
                 <platform>all</platform>
         </extension>
 </addon>
-</addons>
+

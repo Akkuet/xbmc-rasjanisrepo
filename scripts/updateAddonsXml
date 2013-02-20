@@ -1,0 +1,21 @@
+#!/bin/bash
+
+REPOSITORY=.
+
+
+PLUGINS=$(ls $REPOSITORY/*/addon.xml)
+
+cat <<EOF > $REPOSITORY/addons.xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+EOF
+
+for i in $PLUGINS
+do
+  echo $i
+  cat $i |grep -v "<?xml" >>  $REPOSITORY/addons.xml
+done
+
+echo "</addons>" >> $REPOSITORY/addons.xml
+
+md5 addons.xml > addons.xml.md5

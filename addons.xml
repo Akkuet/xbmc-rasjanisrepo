@@ -20,7 +20,6 @@
     <description lang="en">Finnish Net-TV Channel MoonTV</description>
   </extension>
 </addon>
-
 <addon id="plugin.video.sciflix" name="SciFlix" version="0.2" provider-name="Jani (rasjani) Mikkonen">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
@@ -38,12 +37,11 @@
     <description>Your Source For Best Free Scifi and Fantasy Flicks on Internet</description>
   </extension>
 </addon>
-
-<addon id="repository.finrepo.xbmc" name="FinRepo Add-ons" version="1.0.0" provider-name="rasjani">
-        <extension point="xbmc.addon.repository" name="FinRepo Add-ons">
-                <info compressed="false">http://pcuf.fi/~rasjani/xbmc-finrepo/addons.xml</info>
-                <checksum>http://pcuf.fi/~rasjani/xbmc-finrepo/addons.xml.md5</checksum>
-                <datadir zip="true">http://pcuf.fi/~rasjani/xbmc-finrepo/</datadir>
+<addon id="repository.rasjanisrepo.xbmc" name="Rasjani's Add-ons" version="1.0.0" provider-name="rasjani">
+        <extension point="xbmc.addon.repository" name="Rasjani's Add-ons">
+                <info compressed="false">http://pcuf.fi/~rasjani/xbmc-rasjanisrepo/addons.xml</info>
+                <checksum>http://pcuf.fi/~rasjani/xbmc-rasjanisrepo/addons.xml.md5</checksum>
+                <datadir zip="true">http://pcuf.fi/~rasjani/xbmc-rasjanisrepo/</datadir>
         </extension>
         <extension point="xbmc.addon.metadata">
                 <summary>Finnish free streaming  content and some general addons</summary>
@@ -54,4 +52,5 @@
                 <platform>all</platform>
         </extension>
 </addon>
+
 </addons>

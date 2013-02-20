@@ -7,4 +7,12 @@ REPONAME=`basename $URL .git`
 cd $TMPGIT
 git clone $URL
 cd $TMPGIT/$REPONAME/releases/latest/
-unzip *.zip -d $SAVE/
+PLZIP=`ls -1 *.zip|head -1`
+PLID=`echo $PLZIP |sed 's/^\(.*\)-.*\.zip/\1/'`
+
+if [ ! -d $SAVE/$PLID ]; then
+  mkdir -p $SAVE/$PLID
+fi
+
+unzip $PLZIP $PLID/addon.xml -d $SAVE/
+cp $TMPGIT/$REPONAME/releases/latest/$PLZIP $SAVE/$PLID

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.moontv.fi" name="MoonTV.fi" version="0.1" provider-name="Jani (rasjani) Mikkonen">
+<addon id="plugin.video.hdfin.com" name="hdfin.com" version="0.1" provider-name="Teuvo (Akkuet)">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
     <import addon="script.module.xbmcswift2" version="1.2.0"/>
@@ -11,11 +11,11 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <language>fi</language>
-    <summary>Finnish Net-TV Channel MoonTV</summary>
-    <description>Finnish Net-TV Channel MoonTV</description>
-    <summary lang="fi">Suomalainen netti tv kanava MoonTV</summary>
+    <summary>Finnish sub movies hdfin.com</summary>
+    <description>Finnish sub movies hdfin.com</description>
+    <summary lang="fi">Suomalainen netti hdfin.com</summary>
     <description lang="fi">Suomalainen netti tv kanava MoonTV</description>
-    <summary lang="en">Finnish Net-TV Channel MoonTV</summary>
-    <description lang="en">Finnish Net-TV Channel MoonTV</description>
+    <summary lang="en">Finnish sub movies hdfin.com</summary>
+    <description lang="en">Finnish sub movies hdfin.com</description>
   </extension>
 </addon>
